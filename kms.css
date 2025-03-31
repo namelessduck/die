@@ -1,0 +1,10 @@
+.banner {
+    background-image: url("Christmas_illust_2019_enhanced.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    text-align:center !important;
+    color: navy !important;
+}

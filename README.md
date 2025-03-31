@@ -1,0 +1,2 @@
+# die
+i hate myself

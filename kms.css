@@ -1,10 +1,57 @@
+body{
+    font-size:18px;
+}
+
+a:link {color:blue;}
+a:hover{color:red; text-decoration:underline}
+a:visited{color:magenta; text-decoration:underline}
+
 .banner {
     background-image: url("Christmas_illust_2019_enhanced.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
     padding-top: 12rem;
     padding-bottom: 12rem;
     text-align:center !important;
     color: navy !important;
+}
+/* slogan functionality*/
+.slogan{
+    background-color:azure !important;
+    text-align:center !important;
+    width: 100%;
+    padding-right:0.5rem;
+    padding-left:3rem;
+    padding-top:7rem;
+    padding-bottom:7rem;
+}
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: -1;
+    max-width:100%;
+    padding-right:3rem;
+    padding-left:3rem;
+}
+.block-3 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+}
+/* end of slogan func*/
+.content {
+    background-color: white !important;
+    text-align:left !important;
+    padding-right:3rem;
+    padding-left:3rem;
+    padding-top:7rem;
+    padding-bottom:7rem;
+}
+
+.footing{
+    background-color:azure !important;
+    text-align:left !important;
+    width: 100%;
+    padding-top:0.5rem;
 }

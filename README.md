@@ -1,2 +1,1 @@
-# die
-i hate myself
+Zero Two?

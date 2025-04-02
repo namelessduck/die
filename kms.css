@@ -61,3 +61,8 @@ a:visited{color:magenta; text-decoration:underline}
     font-size: 2rem !important;
     font-family: Russo One;
 }
+
+h2 {
+    font-size: 3rem !important;
+    font-family: SVN-Cookies;
+}

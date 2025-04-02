@@ -2,14 +2,19 @@ body{
     font-size:18px;
 }
 
-
+/* Sáng's custom fonts*/
+@font-face{
+    font-family:SVN-Cookies;
+    src: url(SVN-Cookies.ttf);
+}
+/*bs' end*/
 
 h1 {font-family: Verdana, Geneva, Tahoma, sans-serif; ;text-shadow: -2px -2px 2px black;}
 a:link {color:blue;}
-a:hover{color:red; text-decoration:underline}
-a:visited{color:magenta; text-decoration:underline}
-span:hover{font-size:130%}
-span:hover > h3 {text-decoration:underline}
+a:hover{color:red; text-decoration:underline;}
+a:visited{color:magenta; text-decoration:underline;}
+span:hover{font-size:130%;}
+span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
 
 .banner {
     background-image: url("banner.jpg");
@@ -44,6 +49,7 @@ span:hover > h3 {text-decoration:underline}
     flex: 0 0 auto;
     width: 33.33333%;
 }
+
 /* end of slogan func*/
 .content {
     background-color: white !important;
@@ -53,6 +59,12 @@ span:hover > h3 {text-decoration:underline}
     padding-top:7rem;
     padding-bottom:7rem;
 }
+
+h2 {
+    font-size: 3rem !important;
+    font-family: SVN-Cookies;
+}
+
 
 .footing{
     background-color:azure !important;

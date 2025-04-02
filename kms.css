@@ -55,3 +55,9 @@ a:visited{color:magenta; text-decoration:underline}
     width: 100%;
     padding-top:0.5rem;
 }
+
+.block-3 > h3 {
+    color: navy !important;
+    font-size: 2rem !important;
+    font-family: Russo One;
+}

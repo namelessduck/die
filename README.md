@@ -1,5 +1,3 @@
-#DIE
-
 
 Zero Two?
 

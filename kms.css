@@ -9,12 +9,24 @@ body{
 }
 /*bs' end*/
 
-h1 {font-family: Verdana, Geneva, Tahoma, sans-serif; ;text-shadow: -2px -2px 2px black;}
+h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:4rem !important;
+    text-shadow: 2px 0 #000, -0.3rem 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    }
 a:link {color:blue;}
 a:hover{color:red; text-decoration:underline;}
 a:visited{color:magenta; text-decoration:underline;}
 span:hover{font-size:130%;}
 span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #1699d1;
+    color: #f1f1f1;
+}
 
 .banner {
     background-image: url("banner.jpg");
@@ -25,7 +37,7 @@ span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
     padding-top: 12rem;
     padding-bottom: 12rem;
     text-align:center !important;
-    color: darkred !important;
+    color:darkred !important;
 }
 /* slogan functionality*/
 .slogan{
@@ -58,6 +70,7 @@ span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
     padding-left:3rem;
     padding-top:7rem;
     padding-bottom:7rem;
+    
 }
 
 h2 {
@@ -65,6 +78,26 @@ h2 {
     font-family: SVN-Cookies;
 }
 
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 0.33%;
+    width:30%;
+}
+
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
 
 .footing{
     background-color:azure !important;

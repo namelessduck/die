@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
+
+<!--head-->
 <head>
     <title>fuck off our website</title>
     <link rel="stylesheet" href="kms.css" type="text/css">
 </head>
+<!--end head-->
 
 <body>
-<div class="header" id="myHeader">
-    <p>My Header</p>
- </div> 
- <div class="banner">
+
+<!--menu-->
+<div class="menu" id="menu">
+    <span>🏠︎</span>
+    <a href="#1">Giới thiệu</a>
+    <a href="#2">Danh sách CLB</a>
+    <a href="#3">Đơn đăng ký</a>
+    <a href="https://youtu.be/dQw4w9WgXcQ&autoplay=1" style="float:right">GET OUT</a>
+</div>
+<!--end menu-->
+
+<!--banner-->
+<div class="banner">
     <h1>Câu lạc bộ ngoại khóa trường THPT Thăng Long</h1>
- </div>
-<!--we sucks-->
+</div>
+<!--end banner-->
+
+<!--slogan-->
 <div class="slogan">
     <div class="row">
         <div class="block-3">
@@ -35,13 +49,15 @@
         </div>
     </div>
 </div>
+<!--end slogan-->
 
-<div class="content">
+<!--introduction-->
+<div class="introduction" id="1">
     <table>
         <tr>
             <td>
-                <h2>Học Mà Chơi - Chơi mà Học</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laudantium, aperiam illum vero ullam, excepturi atque tempora esse cumque perferendis necessitatibus quae hic et autem quis at? Nobis, nesciunt magnam!<br><a href="https://youtu.be/dQw4w9WgXcQ&autoplay=1">Chi tiết</a></p>
+                <h2>Học mà chơi - Chơi mà học</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita repudiandae sit possimus, atque laborum modi corrupti, dolores alias maiores sapiente fugiat nostrum eveniet inventore itaque ullam commodi nesciunt maxime pariatur.</p>
             </td>
             <td>
                 <img src="illiteracyvalues.jpg" width="100%">
@@ -52,14 +68,14 @@
                 <img src="bcot.jpg" width="100%">
             </td>
             <td>
-                <h2>Thể Thao Sôi Nổi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eos, quasi iste nesciunt, minima ipsum cum debitis eligendi quas et ducimus iure amet sint sequi, expedita nemo nulla. Eaque, nam!<br><a href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXJnbXUzb3NiMXBxazJua24wMmtmNDBpMHJqZ3oxa3RpMm92MnI0MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ju7l5y9osyymQ/giphy.gif">Chi tiết</a></p>
+                <h2>Thể thao sôi nổi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eos, quasi iste nesciunt, minima ipsum cum debitis eligendi quas et ducimus iure amet sint sequi, expedita nemo nulla. Eaque, nam!</p>
             </td>
         </tr>
         <tr>
             <td>
-                <h2>Hoạt Động Ý Nghĩa</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid consectetur veniam, vero doloribus error reiciendis minus, non eius perspiciatis doloremque itaque necessitatibus provident illum asperiores? Harum alias sunt maxime.<br><a href="https://en.wikipedia.org/wiki/Never_Gonna_Give_You_Up">Chi tiết</a></p>
+                <h2>Hoạt động ý nghĩa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid consectetur veniam, vero doloribus error reiciendis minus, non eius perspiciatis doloremque itaque necessitatibus provident illum asperiores? Harum alias sunt maxime.</p>
             </td>
             <td>
                 <img src="tlvc.jpg" width="100%">
@@ -67,8 +83,12 @@
         </tr>
     </table>
 </div>
-<hr>
-<h2>sth sth sth</h2>
+<!--end introduction-->
+
+<br><hr id="2">
+
+<!--gallery-->
+<h2>Danh sách Câu Lạc Bộ</h2>
 <div class="gallery">
     <img src="illiteracyvalues.jpg" alt="salad">
     <div class="description">Salads</div>
@@ -97,11 +117,49 @@
     <img src= "illiteracyvalues.jpg" alt="salad">
     <div class="description">Salads</div>
 </div>
+<!--end gallery-->
 
-<div class="footing">
-    <h3>THIS IS WHY I WILL NOT APPLY FOR HUST</h3>
-    <p>The following individuals are responsible for the creation of this monstrosity:</br>Trần Văn Sáng, Trần Đức Minh, Dương Anh Duy, Nguyễn Văn Thái Dương, Vũ Việt Trung Hiếu, Tống Thị Phước Nguyên, Nguyễn Thị Thùy Linh, Dung</p>
+<!--content-->
+<div class="content">
+    <h2>Chúng tôi là ai?</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laborum laboriosam. Pariatur enim ratione ab aspernatur, placeat officia sunt ipsam adipisci beatae voluptatem tempora, asperiores perspiciatis quis veniam dolorum! Facilis.</p>
 </div>
+    <!--end content-->
+
+<!--form-->
+<h2>Đơn Đăng Ký CLB</h2>
+    <form action="submit_form.php" method="POST" id="3">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="class">Lớp:</label>
+        <input type="text" id="class" name="class" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="club">Chọn CLB:</label>
+        <select id="club" name="club" required>
+            <option value="" disabled selected>-- Chọn CLB --</option>
+            <option value="tinh_nguyen">CLB Tình Nguyện</option>
+            <option value="am_nhac">CLB Âm Nhạc</option>
+            <option value="the_thao">CLB Thể Thao</option>
+            <option value="sach">CLB Sách</option>
+        </select>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+<!--end form-->
 
 </body>
+
+<!--footer-->
+<div class="footing">
+    <h3>THIS IS WHY I WILL NOT APPLY FOR HUST</h3>
+    <p>The following individuals are responsible for the creation of this monstrosity:</br>Trần Văn Sáng, Trần Đức Minh, Dương Anh Duy, Nguyễn Văn Thái Dương, Vũ Việt Trung Hiếu, Tống Thị Phước Nguyên, Nguyễn Thị Thùy Linh, Nguyễn Minh Dung</p>
+    <p>Copyright © 2025 by CLB Thăng Long</p>
+    <p>All rights reserved</p>
+</div>
+<!--end footer-->
+
 </html>

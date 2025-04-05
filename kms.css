@@ -2,12 +2,34 @@ body{
     font-size:18px;
 }
 
+/* Sáng's custom fonts*/
+@font-face{
+    font-family:SVN-Cookies;
+    src: url(SVN-Cookies.ttf);
+}
+/*bs' end*/
+
+h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:4rem !important;
+    text-shadow: 2px 0 #000, -0.3rem 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    }
 a:link {color:blue;}
-a:hover{color:red; text-decoration:underline}
-a:visited{color:magenta; text-decoration:underline}
+a:hover{color:red; text-decoration:underline;}
+a:visited{color:magenta; text-decoration:underline;}
+span:hover{font-size:130%;}
+span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #1699d1;
+    color: #f1f1f1;
+}
 
 .banner {
-    background-image: url("Christmas_illust_2019_enhanced.png");
+    background-image: url("banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +37,7 @@ a:visited{color:magenta; text-decoration:underline}
     padding-top: 12rem;
     padding-bottom: 12rem;
     text-align:center !important;
-    color: navy !important;
+    color:darkred !important;
 }
 /* slogan functionality*/
 .slogan{
@@ -39,6 +61,7 @@ a:visited{color:magenta; text-decoration:underline}
     flex: 0 0 auto;
     width: 33.33333%;
 }
+
 /* end of slogan func*/
 .content {
     background-color: white !important;
@@ -47,6 +70,33 @@ a:visited{color:magenta; text-decoration:underline}
     padding-left:3rem;
     padding-top:7rem;
     padding-bottom:7rem;
+    
+}
+
+h2 {
+    font-size: 3rem !important;
+    font-family: SVN-Cookies;
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 0.33%;
+    width:30%;
+}
+
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
 }
 
 .footing{

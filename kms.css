@@ -1,32 +1,93 @@
-body{
-    font-size:18px;
-}
-
-/* Sáng's custom fonts*/
+/* Sáng's custom fonts */
 @font-face{
-    font-family:SVN-Cookies;
+    font-family: SVN-Cookies;
     src: url(SVN-Cookies.ttf);
 }
-/*bs' end*/
+@font-face{
+    font-family: SVN-Zero;
+    src: url(SVN-Zero.ttf);
+}
+/* bs end */
 
-h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+    box-sizing: border-box;
+}
+
+/* responsive layout - makes the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+}
+/* end of responsive layout */
+
+body {
+    font-size:18px;
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:4rem !important;
     text-shadow: 2px 0 #000, -0.3rem 0 #000, 0 2px #000, 0 -2px #000,
     1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-    }
-a:link {color:blue;}
-a:hover{color:red; text-decoration:underline;}
-a:visited{color:magenta; text-decoration:underline;}
-span:hover{font-size:130%;}
-span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
+}
 
-.header {
+h2 {
+    font-size: 3rem !important;
+    font-family: SVN-Cookies;
+}
+
+a:link {color:blue;}
+
+a:hover {color:red; text-decoration:underline;}
+
+a:visited {color:magenta; text-decoration:underline;}
+
+/* menu functionality */
+.menu span{
+    font-size: 20px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu {
     position: sticky;
     top: 0;
     padding: 10px 16px;
     background: #1699d1;
     color: #f1f1f1;
+    overflow: hidden;
 }
+  
+.menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* end of menu func */
 
 .banner {
     background-image: url("banner.jpg");
@@ -39,8 +100,9 @@ span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
     text-align:center !important;
     color:darkred !important;
 }
-/* slogan functionality*/
-.slogan{
+
+/* slogan functionality */
+.slogan {
     background-color:azure !important;
     text-align:center !important;
     width: 100%;
@@ -49,6 +111,7 @@ span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
     padding-top:7rem;
     padding-bottom:7rem;
 }
+
 .row {
     display:flex;
     flex-wrap:wrap;
@@ -56,63 +119,104 @@ span:hover > h3 {text-decoration:underline; font-family:RussoOne;}
     max-width:100%;
     padding-right:3rem;
     padding-left:3rem;
+    padding-top:7rem;
 }
+
 .block-3 {
     flex: 0 0 auto;
     width: 33.33333%;
 }
 
-/* end of slogan func*/
-.content {
-    background-color: white !important;
-    text-align:left !important;
+.block-3 h3 {
+    color: navy;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+span:hover > h3 {
+    font-size:200%;
+    text-decoration:underline;
+    font-family:SVN-Zero;
+}
+
+.block-3 h3 + p {
+    color:royalblue;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+/* end of slogan func */
+
+.introduction {
+    background-color: white;
+    text-align:justify;
     padding-right:3rem;
     padding-left:3rem;
     padding-top:7rem;
     padding-bottom:7rem;
-    
 }
 
-h2 {
-    font-size: 3rem !important;
-    font-family: SVN-Cookies;
-}
-
-.gallery{
+/* gallery functionality */
+.gallery {
     display: inline-block;
     border: 1px solid hsl(0, 0%, 60%);
     margin: 0.33%;
     width:30%;
 }
 
-.gallery .description{
+.gallery .description {
     padding: 10px;
     text-align: center;
 }
 
-.gallery:hover{
+.gallery:hover {
     border: 1px solid hsl(0, 0%, 20%);
 }
 
-.gallery img{
+.gallery img {
     width: 100%;
     height: auto;
 }
+/* end of gallery func */
 
-.footing{
+/* content functionality */
+.content {
+    background-color: white;
+    text-align:justify;
+    padding-right:3rem;
+    padding-left:3rem;
+    padding-top:7rem;
+    padding-bottom:7rem;
+}
+/* end of content func */
+
+/* form functionality */
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* end of form func */
+
+.footing {
     background-color:azure !important;
     text-align:left !important;
     width: 100%;
     padding-top:0.5rem;
-}
-
-.block-3 > h3 {
-    color: navy !important;
-    font-size: 2rem !important;
-    font-family: Russo One;
-}
-
-h2 {
-    font-size: 3rem !important;
-    font-family: SVN-Cookies;
 }

@@ -38,14 +38,15 @@ body {
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:4rem !important;
+    font-size:4rem;
     text-shadow: 2px 0 #000, -0.3rem 0 #000, 0 2px #000, 0 -2px #000,
     1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 h2 {
-    font-size: 3rem !important;
+    font-size: 3rem;
     font-family: SVN-Cookies;
+    text-align: left !important;
 }
 
 a:link {color:blue;}
@@ -99,6 +100,36 @@ a:visited {color:magenta; text-decoration:underline;}
     padding-bottom: 12rem;
     text-align:center !important;
     color:darkred !important;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* slogan functionality */
@@ -159,8 +190,8 @@ span:hover > h3 {
 .gallery {
     display: inline-block;
     border: 1px solid hsl(0, 0%, 60%);
-    margin: 0.33%;
-    width:30%;
+    margin: 1%;
+    width:100%;
 }
 
 .gallery .description {
@@ -177,17 +208,6 @@ span:hover > h3 {
     height: auto;
 }
 /* end of gallery func */
-
-/* content functionality */
-.content {
-    background-color: white;
-    text-align:justify;
-    padding-right:3rem;
-    padding-left:3rem;
-    padding-top:7rem;
-    padding-bottom:7rem;
-}
-/* end of content func */
 
 /* form functionality */
 label {

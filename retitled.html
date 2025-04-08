@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Đơn đăng ký tham gia câu lạc bộ</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 25px; }
+        h2 { color: red;}
+        form { width: 300px; padding: 15px; border: 3px solid #9e0499; border-radius: 5px; }
+        label { font-weight: bold; display: block; margin-top: 5px; color:#ff8c00c6 }
+        input , select { width: 90%; padding: 8px; margin-top: 5px; }
+        fieldset {width: 18%; border: 2px solid black; border-radius: 5px;}
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h2>Đơn đăng ký tham gia câu lạc bộ</h2>
+            <form>
+                <label for="fullname">Họ và tên:<sup>*</sup></label>
+                    <input id="fullname" type="text" required placeholder="VD: Nguyễn Văn An">
+                <label for="class">Lớp<sup>*</sup></label>
+                    <input id="class" type="text" required placeholder="VD:12A2">    
+                <label for="phonenumber">Số điện thoại:<sup>*</sup></label>
+                    <input id="phonenumber" type="tel" name="sđt" pattern="[0-9]{10}" required placeholder="VD: 0999888777">          
+                <label for="DoB">Ngày sinh:<sup>*</sup></label>
+                    <input id="DoB" type="date" name="ngaysinh" required>
+                <label for="email">Email:<sup>*</sup></label>
+                    <input id="email" type="email" name="email" required placeholder="VD: ABCXYZ@gmail.com">
+                <label for="club">CLB:</label>
+                    <select id="club" name="club">
+                        <option value="MusicClub">CLB Âm nhạc</option>
+                        <option value="VolunteerClub">CLB Tình nguyện</option>
+                        <option value="PhotographyClub">CLB Nhiếp ảnh</option>
+                        <option value="Human">CLB Báo chí</option>
+                        <option value="GoGreen">CLB Xanh</option>
+                        <option value="En">CLB Tiếng Anh</option>
+                        <option value="Cuisine">CLB Ẩm thực</option>
+                    </select>
+                <label for="gender">Giới tính:</label>
+                    <select id="gender" name="gender">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Ẩn">Không muốn nói</option>
+                    </select>
+                <input type="submit" value="Gửi thông tin" style="background-color: wheat;font-size:20px;width: 55%;padding:10px;margin-left:55px">
+            </form>
+    </fieldset>
+</body>
+</html>

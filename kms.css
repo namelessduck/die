@@ -222,6 +222,10 @@ input, select, button {
     box-sizing: border-box;
 }
 
+form sup {
+    color: red;
+}
+
 button {
     background-color: #4CAF50;
     color: white;

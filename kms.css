@@ -4,8 +4,8 @@
     src: url(SVN-Cookies.ttf);
 }
 @font-face{
-    font-family: SVN-Zero;
-    src: url(SVN-Zero.ttf);
+    font-family: CoinyReg;
+    src: url(Coiny-Regular.ttf);
 }
 /* bs end */
 
@@ -50,10 +50,18 @@ h2 {
 }
 
 a:link {color:blue;}
-
 a:hover {color:red; text-decoration:underline;}
-
 a:visited {color:magenta; text-decoration:underline;}
+
+summary {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+  }
+summary:hover{
+    font: size 1.1em !important;
+    text-decoration-style: solid !important;
+}
 
 /* menu functionality */
 .menu span{
@@ -126,6 +134,11 @@ a:visited {color:magenta; text-decoration:underline;}
     margin-top: 20px;
 }
 
+.card > h2 {
+    font-family: CoinyReg !important;
+}
+
+
 .row::after {
     content: "";
     display: table;
@@ -167,7 +180,6 @@ a:visited {color:magenta; text-decoration:underline;}
 span:hover > h3 {
     font-size:200%;
     text-decoration:underline;
-    font-family:SVN-Zero;
 }
 
 .block-3 h3 + p {
@@ -207,6 +219,7 @@ span:hover > h3 {
     width: 100%;
     height: auto;
 }
+
 /* end of gallery func */
 
 /* form functionality */
@@ -238,6 +251,9 @@ button:hover {
 }
 /* end of form func */
 
+form sup {
+    color: red;
+}
 .footing {
     background-color:azure !important;
     text-align:left !important;

@@ -57,7 +57,7 @@
         <tr>
             <td>
                 <h2>Học mà chơi - Chơi mà học</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita repudiandae sit possimus, atque laborum modi corrupti, dolores alias maiores sapiente fugiat nostrum eveniet inventore itaque ullam commodi nesciunt maxime pariatur.</p>
+                <p>Học sinh THPT Thăng Long được trải nghiệm học tập sáng tạo qua các hoạt động như sân khấu hóa, tổ vui học. Phương pháp này giúp tăng hứng thú, phát triển tư duy và kỹ năng mềm hiệu quả.</p>
             </td>
             <td>
                 <img src="intro1.jpg" width="100%">
@@ -69,13 +69,13 @@
             </td>
             <td>
                 <h2>Thể thao sôi nổi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eos, quasi iste nesciunt, minima ipsum cum debitis eligendi quas et ducimus iure amet sint sequi, expedita nemo nulla. Eaque, nam!</p>
+                <p>Các hoạt động thể thao như bóng đá, cầu lông, kéo co... luôn được học sinh tham gia nhiệt tình. Đây là sân chơi bổ ích giúp rèn luyện sức khỏe, phát huy tinh thần đồng đội và phát hiện năng khiếu thể thao.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <h2>Hoạt động ý nghĩa</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid consectetur veniam, vero doloribus error reiciendis minus, non eius perspiciatis doloremque itaque necessitatibus provident illum asperiores? Harum alias sunt maxime.</p>
+                <p>Học sinh tích cực tham gia các chương trình thiện nguyện, bảo vệ môi trường và hoạt động vì cộng đồng. Đây là dịp để các em sống yêu thương, có trách nhiệm và trưởng thành hơn trong hành trình học tập.</p>
             </td>
             <td>
                 <img src="intro3.jpg" width="100%">
@@ -437,6 +437,10 @@
                 <div class="description">Cuisine Club</div>
             </div>
             <div class="gallery">
+                <img src= "basketball lol.jpg" alt="salad">
+                <div class="description">Basketball Club</div>
+            </div>
+            <div class="gallery">
                 <img src= "stem gallery.jpg" alt="salad">
                 <div class="description">STEM Club</div>
             </div>
@@ -447,41 +451,45 @@
 
 <!--form-->
 <h2>Đơn Đăng Ký CLB</h2>
-<h3>(*: Bắt buộc)</h3>
     <form action="submit_form.php" method="POST" id="3">
-        <label for="name">Họ và tên:<sup>*</sup></label>
-        <input type="text" id="name" name="name" required>
+        <fieldset>
+            <label for="fullname">Họ và tên:<sup>*</sup></label>
+                <input id="fullname" type="text" required placeholder="VD: Nguyễn Văn An">
 
-        <label for="class">Lớp:<sup>*</sup></label>
-        <input type="text" id="class" name="class" placeholder="VD:12A2" required>
+            <label for="class">Lớp<sup>*</sup></label>
+                <input id="class" type="text" required placeholder="VD:12A2">
 
-        <label for="DoB">Ngày sinh:<sup>*</sup></label>
-        <input id="DoB" type="date" name="ngaysinh" required>
+            <label for="phonenumber">Số điện thoại:<sup>*</sup></label>
+                <input id="phonenumber" type="tel" name="sđt" pattern="[0-9]{10}" required placeholder="VD: 0999888777">
 
-        <label for="gender">Giới tính:<sup>*</sup></label>
-        <select id="gender" name="gender">
-            <option value="" disabled selected>-- Chọn giới tính --</option>
-            <option value="Nam">Nam</option>
-            <option value="Nữ">Nữ</option>
-            <option value="Both">Khác😏</option>
-        </select>
+            <label for="DoB">Ngày sinh:<sup>*</sup></label>
+                <input id="DoB" type="date" name="ngaysinh" required>
 
-        <label for="phonenumber">Số điện thoại:<sup>*</sup></label>
-        <input id="phonenumber" type="tel" name="sđt" pattern="[0-9]{10}" required placeholder="VD: 0999888777">
+            <label for="email">Email:<sup>*</sup></label>
+                <input id="email" type="email" name="email" required placeholder="VD: ABCXYZ@gmail.com">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="VD: sleep@yourmother.com">
+            <label for="club">CLB:<sup>*</sup></label>
+                <select id="club" name="club">
+                    <option value="" disabled selected>-- Chọn CLB --</option>
+                    <option value="Music">CLB Âm nhạc</option>
+                    <option value="Volunteer">CLB Tình nguyện</option>
+                    <option value="Photography">CLB Nhiếp ảnh</option>
+                    <option value="Human">CLB Báo chí</option>
+                    <option value="GoGreen">CLB Xanh</option>
+                    <option value="English">CLB Tiếng Anh</option>
+                    <option value="Cuisine">CLB Ẩm thực</option>
+                </select>
 
-        <label for="club">Chọn CLB:<sup>*</sup></label>
-        <select id="club" name="club" required>
-            <option value="" disabled selected>-- Chọn CLB --</option>
-            <option value="tinh_nguyen">CLB Tình Nguyện</option>
-            <option value="am_nhac">CLB Âm Nhạc</option>
-            <option value="the_thao">CLB Thể Thao</option>
-            <option value="sach">CLB Sách</option>
-        </select>
+            <label for="gender">Giới tính:<sup>*</sup></label>
+                <select id="gender" name="gender">
+                    <option value="" disabled selected>-- Chọn giới tính --</option>
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                    <option value="Both">Khác😏</option>
+                </select>
 
-        <button type="submit">Đăng ký</button>
+            <button type="submit">Đăng ký</button>
+        </fieldset>    
     </form>
 <!--end form-->
 
@@ -489,11 +497,12 @@
 
 <!--footer-->
 <div class="footing">
-    <h3>THIS IS WHY I WILL NOT APPLY FOR HUST</h3>
-    <p>The following individuals are responsible for the creation of this monstrosity:</br>Trần Văn Sáng, Trần Đức Minh, Dương Anh Duy, Nguyễn Văn Thái Dương, Vũ Việt Trung Hiếu, Tống Thị Phước Nguyên, Nguyễn Thị Thùy Linh, Nguyễn Minh Dung</p>
-    <p>Copyright © 2025 by Yessir</p>
+    <h3>I AM STEVE</h3>
+    <p>The following individuals are responsible for the creation of this monstrosity:</br>
+    Main coder: Trần Văn Sáng, Trần Đức Minh<br>
+    Secondary coder: Dương Anh Duy, Vũ Việt Trung Hiếu<br>
+    Content and media: Nguyễn Thị Thùy Linh, Tống Thị Phước Nguyên, Nguyễn Minh Dung, Nguyễn Văn Thái Dương</p>
+    <p>Copyright © 2025 by Chicken Jockey</p>
     <p>All rights reserved</p>
 </div>
 <!--end footer-->
-
-</html>

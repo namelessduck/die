@@ -247,6 +247,9 @@ button:hover {
 }
 /* end of form func */
 
+form sup {
+    color: red;
+}
 .footing {
     background-color:azure !important;
     text-align:left !important;

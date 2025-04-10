@@ -27,6 +27,12 @@
       width: 100%;
     }
 }
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* end of responsive layout */
 
 body {
@@ -52,16 +58,6 @@ h2 {
 a:link {color:blue;}
 a:hover {color:red; text-decoration:underline;}
 a:visited {color:magenta; text-decoration:underline;}
-
-summary {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-style: dashed;
-  }
-summary:hover{
-    font: size 1.1em !important;
-    text-decoration-style: solid !important;
-}
 
 /* menu functionality */
 .menu span{
@@ -110,6 +106,7 @@ summary:hover{
     color:darkred !important;
 }
 
+/*For content */
 .leftcolumn {   
     float: left;
     width: 75%;
@@ -122,12 +119,6 @@ summary:hover{
     padding-left: 20px;
 }
 
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
 .card {
     background-color: white;
     padding: 20px;
@@ -138,12 +129,42 @@ summary:hover{
     font-family: CoinyReg !important;
 }
 
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+/*special: gallery functionality */
+.gallery {
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 1%;
+    width:100%;
 }
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover {
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* end of gallery func */
+/*special: summary styling */
+summary {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+  }
+summary:hover{
+    font: size 1.1em !important;
+    text-decoration-style: solid !important;
+}
+/* summary end */
+/*end of content */
+
 
 /* slogan functionality */
 .slogan {
@@ -197,30 +218,6 @@ span:hover > h3 {
     padding-top:7rem;
     padding-bottom:7rem;
 }
-
-/* gallery functionality */
-.gallery {
-    display: inline-block;
-    border: 1px solid hsl(0, 0%, 60%);
-    margin: 1%;
-    width:100%;
-}
-
-.gallery .description {
-    padding: 10px;
-    text-align: center;
-}
-
-.gallery:hover {
-    border: 1px solid hsl(0, 0%, 20%);
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-/* end of gallery func */
 
 /* form functionality */
 label {
